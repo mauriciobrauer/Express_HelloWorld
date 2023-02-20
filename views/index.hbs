@@ -1,2 +1,24 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p>Bienvenido a {{title}}</p>
+
+<div class="row">
+  <form action="/peticion/{{tipo_contrato}}" method="POST">
+    <!--div class="mb-3">
+      <textarea
+        type="text"
+        name="message"
+        class="form-control"
+        placeholder="Escribe el titulo"
+        autofocus
+      ></textarea-->
+      <input type="radio" id="html" name="tipo_contrato" value="Arrendamiento" />
+      <label for="html">Arrendamiento</label><br />
+      <input type="radio" id="css" name="tipo_contrato" value="Compraventa de auto" />
+      <label for="css">Compraventa de auto</label><br />
+      <input type="radio" id="css" name="tipo_contrato" value="Compraventa de bienes raices" />
+      <label for="javascript">Compraventa de bienes raices</label>
+    </div>
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+</div>
